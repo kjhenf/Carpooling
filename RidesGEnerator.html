@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Panel fixed positioning - jQuery Mobile Demos</title>
+    <link rel="stylesheet" href="css/themes/default/jquery.mobile-1.4.5.min.css">
+    <link rel="stylesheet" href="_assets/css/jqm-demos.css">
+	<link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
+	<script src="js/jquery.js"></script>
+    <script src="_assets/js/index.js"></script>
+    <script src="js/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+
+<!-- /page HOME -->
+<div data-role="page" class="jqm-demos" id="home" data-title="Panel fixed positioning">
+	
+	<!-- /header -->
+    <div data-role="header" data-position="fixed">
+        <h1>Rides GEnerator</h1>
+    </div>
+	<!-- /header -->
+
+	<!-- /content -->
+    <div role="main" class="ui-content jqm-content jqm-fullwidth">
+    	<h1>Home</h1>
+
+		<div data-demo-html="true">
+			<a href="#find-ride" class="ui-btn ui-shadow">Find a Ride</a>
+			<a href="#publish-ride" class="ui-btn ui-shadow">Publish a Ride</a>
+			<a href="#manage-rides" class="ui-btn ui-shadow">Manage Rides</a>
+			<a href="#my-profile" class="ui-btn ui-shadow">My Profile</a>
+		</div>
+	</div>
+	<!-- /content -->
+
+	<!-- /footer -->
+    <div data-role="footer" data-position="fixed">
+    	<h4>@ITLP: Andres, Kirk and Ingrid</h4>
+    </div>
+	<!-- /footer -->
+
+</div>
+<!-- /page -->
+
+<!-- /page FIND A RIDE -->
+<div data-role="page" class="jqm-demos" id="find-ride" data-title="Panel fixed positioning">
+	
+	<!-- /header -->
+    <div data-role="header" data-position="fixed">
+        <h1>Rides GEnerator</h1>
+        <a href="#nav-panel" data-icon="bars" data-iconpos="notext">Menu</a>
+        <a href="#add-form" data-icon="gear" data-iconpos="notext">Add</a>
+    </div>
+	<!-- /header -->
+
+	<!-- /content -->
+    <div role="main" class="ui-content jqm-content jqm-fullwidth">
+
+    	<h1>Find a Ride</h1>
+		<p>Google Map with markers and directions here! @Andre and @Kirk<p>
+
+		<!--/
+		ANDRES AND KIRK TO CODE!
+		-->
+		
+	</div>
+	<!-- /content -->
+
+	<!-- /footer -->
+    <div data-role="footer" data-position="fixed">
+    	<h4>@ITLP: Andres, Kirk and Ingrid</h4>
+    </div>
+	<!-- /footer -->
+
+	<!-- /panel -->
+	<div data-role="panel" data-position-fixed="true" data-display="push" data-theme="b" id="nav-panel">
+		<ul data-role="listview">
+            <li data-icon="delete"><a href="#" data-rel="close">Close menu</a></li>
+                <li><a href="#home">Home</a></li>
+				<li><a href="#publish-ride">Publish a Ride</a></li>
+                <li><a href="#manage-rides">Manage Ride</a></li>
+                <li><a href="#my-profile">My Profile</a></li>
+		</ul>
+	</div>
+	<!-- /panel -->
+
+	<!-- /panel -->
+	<div data-role="panel" data-position="right" data-position-fixed="true" data-display="overlay" data-theme="a" id="add-form">
+        <form class="userform">
+        	<h2>Login</h2>
+            <label for="name">Username:</label>
+            <input type="text" name="name" id="name" value="" data-clear-btn="true" data-mini="true">
+
+            <label for="password">Password:</label>
+            <input type="password" name="password" id="password" value="" data-clear-btn="true" autocomplete="off" data-mini="true">
+
+            <div class="ui-grid-a">
+                <div class="ui-block-a"><a href="#" data-rel="close" class="ui-btn ui-shadow ui-corner-all ui-btn-b ui-mini">Cancel</a></div>
+                <div class="ui-block-b"><a href="#" data-rel="close" class="ui-btn ui-shadow ui-corner-all ui-btn-a ui-mini">Save</a></div>
+			</div>
+        </form>
+	</div>
+	<!-- /panel -->
+
+</div>
+<!-- /page -->
+
+<!-- /page PUBLISH A RIDE -->
+<div data-role="page" class="jqm-demos" id="publish-ride" data-title="Panel fixed positioning">
+	
+	<!-- /header -->
+    <div data-role="header" data-position="fixed">
+        <h1>Rides GEnerator</h1>
+        <a href="#nav-panel" data-icon="bars" data-iconpos="notext">Menu</a>
+        <a href="#add-form" data-icon="gear" data-iconpos="notext">Add</a>
+    </div>
+	<!-- /header -->
+
+	<!-- /content -->
+    <div role="main" class="ui-content jqm-content jqm-fullwidth">
+
+    	<h1>Publish a Ride</h1>
+
+		<!--/
+		INGRID TO CODE HERE!
+		-->
+		
+	</div>
+	<!-- /content -->
+
+	<!-- /footer -->
+    <div data-role="footer" data-position="fixed">
+    	<h4>@ITLP: Andres, Kirk and Ingrid</h4>
+    </div>
+	<!-- /footer -->
+
+	<!-- /panel -->
+	<div data-role="panel" data-position-fixed="true" data-display="push" data-theme="b" id="nav-panel">
+		<ul data-role="listview">
+            <li data-icon="delete"><a href="#" data-rel="close">Close menu</a></li>
+                <li><a href="#home">Home</a></li>
+				<li><a href="#find-ride">Find a Ride</a></li>
+                <li><a href="#manage-rides">Manage Ride</a></li>
+                <li><a href="#my-profile">My Profile</a></li>
+		</ul>
+	</div>
+	<!-- /panel -->
+
+	<!-- /panel -->
+	<div data-role="panel" data-position="right" data-position-fixed="true" data-display="overlay" data-theme="a" id="add-form">
+        <form class="userform">
+        	<h2>Login</h2>
+            <label for="name">Username:</label>
+            <input type="text" name="name" id="name" value="" data-clear-btn="true" data-mini="true">
+
+            <label for="password">Password:</label>
+            <input type="password" name="password" id="password" value="" data-clear-btn="true" autocomplete="off" data-mini="true">
+
+            <div class="ui-grid-a">
+                <div class="ui-block-a"><a href="#" data-rel="close" class="ui-btn ui-shadow ui-corner-all ui-btn-b ui-mini">Cancel</a></div>
+                <div class="ui-block-b"><a href="#" data-rel="close" class="ui-btn ui-shadow ui-corner-all ui-btn-a ui-mini">Save</a></div>
+			</div>
+        </form>
+	</div>
+	<!-- /panel -->
+
+</div>
+<!-- /page -->
+
+
+
+</body>
+</html>
